@@ -1,0 +1,500 @@
+[2025-02-02 23:06:16] local.ERROR: Call to a member function setCookie() on null {"exception":"[object] (Error(code: 0): Call to a member function setCookie() on null at C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php:191)
+[stacktrace]
+#0 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(80): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->addCookieToResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#1 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(263): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->Illuminate\\Foundation\\Http\\Middleware\\{closure}(Object(Illuminate\\View\\View))
+#2 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): tap(Object(Illuminate\\View\\View), Object(Closure))
+#3 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#4 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#5 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#6 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#8 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(719): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\xampplatest\\htdocs\\project\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\xampplatest\\htdocs\\project\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\xampplatest\\htdocs\\project\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 {main}
+"} 
+[2025-02-02 23:06:35] local.ERROR: Call to a member function setCookie() on null {"exception":"[object] (Error(code: 0): Call to a member function setCookie() on null at C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php:191)
+[stacktrace]
+#0 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(80): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->addCookieToResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#1 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(263): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->Illuminate\\Foundation\\Http\\Middleware\\{closure}(Object(Illuminate\\View\\View))
+#2 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): tap(Object(Illuminate\\View\\View), Object(Closure))
+#3 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#4 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#5 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#6 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#8 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(719): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#15 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#16 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#17 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#18 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#19 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\xampplatest\\htdocs\\project\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\xampplatest\\htdocs\\project\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\xampplatest\\htdocs\\project\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 {main}
+"} 
+[2025-02-02 23:07:15] local.ERROR: Undefined variable $languages (View: C:\xampplatest\htdocs\project\resources\views\themes\gameshop\partials\footer.blade.php) {"view":{"view":"C:\\xampplatest\\htdocs\\project\\resources\\views/themes/gameshop/partials/footer.blade.php","data":{"basic":"<pre class=sf-dump id=sf-dump-1735228586 data-indent-pad=\"  \">{<a class=sf-dump-ref>#293</a><samp data-depth=1 class=sf-dump-expanded>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">site_title</span>\": \"<span class=sf-dump-str title=\"12 characters\">Gamers Arena</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">base_color</span>\": \"<span class=sf-dump-str title=\"7 characters\">#ff5400</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">base_secondary</span>\": \"<span class=sf-dump-str title=\"7 characters\">#ff7843</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">time_zone</span>\": \"<span class=sf-dump-str title=\"3 characters\">UTC</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">currency</span>\": \"<span class=sf-dump-str title=\"3 characters\">USD</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">currency_symbol</span>\": \"<span class=sf-dump-str>$</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">theme</span>\": \"<span class=sf-dump-str title=\"8 characters\">gameshop</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">fraction_number</span>\": <span class=sf-dump-num>2</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">paginate</span>\": <span class=sf-dump-num>20</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">email_verification</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">email_notification</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">sms_verification</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">sms_notification</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">push_notification</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">error_log</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">strong_password</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">registration</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">address_verification</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">identity_verification</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">maintenance</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">is_active_cron_notification</span>\": <span class=sf-dump-num>0</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">payment_expired</span>\": <span class=sf-dump-num>15</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">payment_released</span>\": <span class=sf-dump-num>7</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">top_up</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">voucher</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">gift_card</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">sell_post</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">sender_email</span>\": \"<span class=sf-dump-str title=\"18 characters\">support@domain.com</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">sender_email_name</span>\": \"<span class=sf-dump-str title=\"12 characters\">Gamers Arena</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">email_configuration</span>\": <span class=sf-dump-note>array:6</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>name</span>\" => \"<span class=sf-dump-str title=\"4 characters\">smtp</span>\"
+    \"<span class=sf-dump-key>smtp_host</span>\" => \"<span class=sf-dump-str title=\"16 characters\">smtp.mailtrap.io</span>\"
+    \"<span class=sf-dump-key>smtp_port</span>\" => \"<span class=sf-dump-str title=\"3 characters\">465</span>\"
+    \"<span class=sf-dump-key>smtp_encryption</span>\" => \"<span class=sf-dump-str title=\"3 characters\">ssl</span>\"
+    \"<span class=sf-dump-key>smtp_username</span>\" => \"<span class=sf-dump-str title=\"14 characters\">b75b1a5bfa5d58</span>\"
+    \"<span class=sf-dump-key>smtp_password</span>\" => \"<span class=sf-dump-str title=\"14 characters\">f89fbe0495a7fc</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1735228586\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","theme":"<pre class=sf-dump id=sf-dump-64108810 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"16 characters\">themes.gameshop.</span>\"
+</pre><script>Sfdump(\"sf-dump-64108810\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","themeTrue":"<pre class=sf-dump id=sf-dump-671713491 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"23 characters\">assets/themes/gameshop/</span>\"
+</pre><script>Sfdump(\"sf-dump-671713491\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","errors":"<pre class=sf-dump id=sf-dump-96748245 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1062</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-96748245\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","exception":"<pre class=sf-dump id=sf-dump-1686019747 data-indent-pad=\"  \"><span class=sf-dump-note>Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException</span> {<a class=sf-dump-ref>#695</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">message</span>: \"\"
+  #<span class=sf-dump-protected title=\"Protected property\">code</span>: <span class=sf-dump-num>0</span>
+  #<span class=sf-dump-protected title=\"Protected property\">file</span>: \"<span class=sf-dump-str title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\AbstractRouteCollection.php
+105 characters\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Routing\\AbstractRouteCollection.php</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">line</span>: <span class=sf-dump-num>43</span>
+  -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\HttpKernel\\Exception\\HttpException`\">statusCode</span>: <span class=sf-dump-num>404</span>
+  -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\HttpKernel\\Exception\\HttpException`\">headers</span>: []
+  <span class=sf-dump-meta>trace</span>: {<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\AbstractRouteCollection.php:43
+Stack level 25.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Routing\\AbstractRouteCollection.php:43</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Routing\\AbstractRouteCollection-&gt;handleMatchedRoute(Request $request, $route)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Routing</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>AbstractRouteCollection-&gt;handleMatchedRoute(Request $request, $route)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Routing\\AbstractRouteCollection-&gt;handleMatchedRoute(Request $request, $route)\">    throw new NotFoundHttpException;</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteCollection.php:162
+Stack level 24.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Routing\\RouteCollection.php:162</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Routing\\RouteCollection-&gt;match(Request $request)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Routing</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>RouteCollection-&gt;match(Request $request)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Routing\\RouteCollection-&gt;match(Request $request)\">    return $this-&gt;handleMatchedRoute($request, $route);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:673
+Stack level 23.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Routing\\Router.php:673</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Routing\\Router-&gt;findRoute($request)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Routing</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Router-&gt;findRoute($request)</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>{</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Routing\\Router-&gt;findRoute($request)\">    $this-&gt;current = $route = $this-&gt;routes-&gt;match($request);</span></code>
+      &#8250; 
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:662
+Stack level 22.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Routing\\Router.php:662</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Routing\\Router-&gt;dispatchToRoute(Request $request)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Routing</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Router-&gt;dispatchToRoute(Request $request)</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>{</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Routing\\Router-&gt;dispatchToRoute(Request $request)\">    return $this-&gt;runRoute($request, $this-&gt;findRoute($request));</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:651
+Stack level 21.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Routing\\Router.php:651</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Routing\\Router-&gt;dispatch(Request $request)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Routing</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Router-&gt;dispatch(Request $request)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Routing\\Router-&gt;dispatch(Request $request)\">    return $this-&gt;dispatchToRoute($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php:167
+Stack level 20.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Kernel.php:167</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Kernel-&gt;Illuminate\\Foundation\\Http\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http\\Kernel-&gt;Illuminate\\Foundation\\Http</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Kernel-&gt;Illuminate\\Foundation\\Http\\{closure}\">    return $this-&gt;router-&gt;dispatch($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>};</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:128
+Stack level 19.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:128</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>try {</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}\">    return $destination($passable);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>} catch (Throwable $e) {</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php:21
+Stack level 18.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php:21</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest-&gt;handle($request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http\\Middleware</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>TransformsRequest-&gt;handle($request, Closure $next)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest-&gt;handle($request, Closure $next)\">    return $next($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php:31
+Stack level 17.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php:31</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull-&gt;handle($request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http\\Middleware</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ConvertEmptyStringsToNull-&gt;handle($request, Closure $next)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull-&gt;handle($request, Closure $next)\">    return parent::handle($request, $next);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:167
+Stack level 16.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:167</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>$carry = method_exists($pipe, $this-&gt;method)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}\">                ? $pipe-&gt;{$this-&gt;method}(...$parameters)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>                : $pipe(...$parameters);</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php:21
+Stack level 15.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php:21</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest-&gt;handle($request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http\\Middleware</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>TransformsRequest-&gt;handle($request, Closure $next)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest-&gt;handle($request, Closure $next)\">    return $next($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php:40
+Stack level 14.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php:40</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Middleware\\TrimStrings-&gt;handle($request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http\\Middleware</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>TrimStrings-&gt;handle($request, Closure $next)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Middleware\\TrimStrings-&gt;handle($request, Closure $next)\">    return parent::handle($request, $next);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:167
+Stack level 13.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:167</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>$carry = method_exists($pipe, $this-&gt;method)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}\">                ? $pipe-&gt;{$this-&gt;method}(...$parameters)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>                : $pipe(...$parameters);</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php:27
+Stack level 12.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php:27</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize-&gt;handle($request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http\\Middleware</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ValidatePostSize-&gt;handle($request, Closure $next)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize-&gt;handle($request, Closure $next)\">    return $next($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:167
+Stack level 11.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:167</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>$carry = method_exists($pipe, $this-&gt;method)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}\">                ? $pipe-&gt;{$this-&gt;method}(...$parameters)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>                : $pipe(...$parameters);</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php:86
+Stack level 10.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php:86</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance-&gt;handle($request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http\\Middleware</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>PreventRequestsDuringMaintenance-&gt;handle($request, Closure $next)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance-&gt;handle($request, Closure $next)\">    return $next($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:167
+Stack level 9.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:167</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>$carry = method_exists($pipe, $this-&gt;method)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}\">                ? $pipe-&gt;{$this-&gt;method}(...$parameters)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>                : $pipe(...$parameters);</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php:38
+Stack level 8.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\fruitcake\\laravel-cors\\</span>src\\HandleCors.php:38</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Fruitcake\\Cors\\HandleCors-&gt;handle($request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Fruitcake\\Cors</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>HandleCors-&gt;handle($request, Closure $next)</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>if (! $this-&gt;shouldRun($request)) {</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Fruitcake\\Cors\\HandleCors-&gt;handle($request, Closure $next)\">    return $next($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:167
+Stack level 7.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:167</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>$carry = method_exists($pipe, $this-&gt;method)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}\">                ? $pipe-&gt;{$this-&gt;method}(...$parameters)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>                : $pipe(...$parameters);</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\fideloper\\proxy\\src\\TrustProxies.php:57
+Stack level 6.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\fideloper\\proxy\\</span>src\\TrustProxies.php:57</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Fideloper\\Proxy\\TrustProxies-&gt;handle(Request $request, Closure $next)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Fideloper\\Proxy</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>TrustProxies-&gt;handle(Request $request, Closure $next)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Fideloper\\Proxy\\TrustProxies-&gt;handle(Request $request, Closure $next)\">    return $next($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:167
+Stack level 5.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:167</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>{closure}</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>$carry = method_exists($pipe, $this-&gt;method)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;Illuminate\\Pipeline\\{closure}\">                ? $pipe-&gt;{$this-&gt;method}(...$parameters)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>                : $pipe(...$parameters);</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;2}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:103
+Stack level 4.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Pipeline\\Pipeline.php:103</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Pipeline\\Pipeline-&gt;then(Closure $destination)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Pipeline</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Pipeline-&gt;then(Closure $destination)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Pipeline\\Pipeline-&gt;then(Closure $destination)\">    return $pipeline($this-&gt;passable);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php:142
+Stack level 3.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Kernel.php:142</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Kernel-&gt;sendRequestThroughRouter($request)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Kernel-&gt;sendRequestThroughRouter($request)</span> &#8230;
+      &#8250; <code class=\"php\"><span class=sf-dump-default>                -&gt;through($this-&gt;app-&gt;shouldSkipMiddleware() ? [] : $this-&gt;middleware)</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Kernel-&gt;sendRequestThroughRouter($request)\">                -&gt;then($this-&gt;dispatchToRouter());</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>}</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php:111
+Stack level 2.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project\\vendor</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\laravel\\framework\\</span>src\\Illuminate\\Foundation\\Http\\Kernel.php:111</span> {<samp data-depth=3 class=sf-dump-compact>
+      <span class=sf-dump-note title=\"Illuminate\\Foundation\\Http\\Kernel-&gt;handle($request)
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Foundation\\Http</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Kernel-&gt;handle($request)</span> &#8230;
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"in Illuminate\\Foundation\\Http\\Kernel-&gt;handle($request)\">    $response = $this-&gt;sendRequestThroughRouter($request);</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>} catch (Throwable $e) {</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+    <span class=sf-dump-meta title=\"C:\\xampplatest\\htdocs\\project\\index.php:51
+Stack level 1.\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">C:\\xampplatest\\htdocs\\project</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-path\">\\</span>index.php:51</span> {<samp data-depth=3 class=sf-dump-compact>
+      &#8250; 
+      &#8250; <code class=\"php\"><span class=sf-dump-const title=\"\">$response = tap($kernel-&gt;handle(</span></code>
+      &#8250; <code class=\"php\"><span class=sf-dump-default>    $request = Request::capture()</span></code>
+      <span class=sf-dump-meta>arguments</span>: { &#8230;1}
+    </samp>}
+  </samp>}
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1686019747\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable $languages (View: C:\\xampplatest\\htdocs\\project\\resources\\views\\themes\\gameshop\\partials\\footer.blade.php) at C:\\xampplatest\\htdocs\\project\\resources\\views/themes/gameshop/partials/footer.blade.php:114)
+[stacktrace]
+#0 C:\\xampplatest\\htdocs\\project\\resources\\views/themes/gameshop/partials/footer.blade.php(114): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampplatest\\\\...', 121)
+#1 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#2 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#4 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#5 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#6 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#7 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#8 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#9 C:\\xampplatest\\htdocs\\project\\resources\\views/themes/gameshop/layouts/app.blade.php(178): Illuminate\\View\\View->render()
+#10 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#11 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#12 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#13 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#14 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#15 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#16 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#17 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#18 C:\\xampplatest\\htdocs\\project\\resources\\views/themes/gameshop/errors/404.blade.php(21): Illuminate\\View\\View->render()
+#19 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#20 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#21 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#22 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#23 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#24 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#25 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#26 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#27 C:\\xampplatest\\htdocs\\project\\resources\\views/errors/404.blade.php(1): Illuminate\\View\\View->render()
+#28 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#29 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#30 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#31 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#32 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#33 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#34 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#35 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#36 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#37 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#38 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(55): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 404, Array)
+#39 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(85): Illuminate\\Routing\\ResponseFactory->make(Object(Illuminate\\View\\View), 404, Array)
+#40 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(582): Illuminate\\Routing\\ResponseFactory->view('errors::404', Array, 404, Array)
+#41 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(490): Illuminate\\Foundation\\Exceptions\\Handler->renderHttpException(Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#42 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(356): Illuminate\\Foundation\\Exceptions\\Handler->prepareResponse(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#43 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(51): Illuminate\\Foundation\\Exceptions\\Handler->render(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#44 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Pipeline->handleException(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#45 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\xampplatest\\htdocs\\project\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\xampplatest\\htdocs\\project\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#61 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#62 C:\\xampplatest\\htdocs\\project\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#63 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $languages at C:\\xampplatest\\htdocs\\project\\storage\\framework\\views\\375bf83154efe55ac724eea300bb4c3f28624bc0.php:121)
+[stacktrace]
+#0 C:\\xampplatest\\htdocs\\project\\storage\\framework\\views\\375bf83154efe55ac724eea300bb4c3f28624bc0.php(121): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampplatest\\\\...', 121)
+#1 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#2 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#4 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#5 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#6 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#7 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#8 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#9 C:\\xampplatest\\htdocs\\project\\storage\\framework\\views\\f812fd415347cbf52bd68286cebb032d051c5a8a.php(178): Illuminate\\View\\View->render()
+#10 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#11 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#12 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#13 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#14 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#15 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#16 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#17 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#18 C:\\xampplatest\\htdocs\\project\\storage\\framework\\views\\ca870b485032a2da9ab7c62b7627ed4d61048652.php(21): Illuminate\\View\\View->render()
+#19 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#20 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#21 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#22 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#23 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#24 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#25 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#26 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#27 C:\\xampplatest\\htdocs\\project\\storage\\framework\\views\\145f2ccc94fa65c4a02f6dd90c20e8e9e65e2a28.php(1): Illuminate\\View\\View->render()
+#28 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampplatest\\\\...')
+#29 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#30 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampplatest\\\\...', Array)
+#31 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampplatest\\\\...', Array)
+#32 C:\\xampplatest\\htdocs\\project\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#33 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\xampplatest\\\\...', Array)
+#34 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#35 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#36 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#37 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#38 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(55): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 404, Array)
+#39 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResponseFactory.php(85): Illuminate\\Routing\\ResponseFactory->make(Object(Illuminate\\View\\View), 404, Array)
+#40 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(582): Illuminate\\Routing\\ResponseFactory->view('errors::404', Array, 404, Array)
+#41 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(490): Illuminate\\Foundation\\Exceptions\\Handler->renderHttpException(Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#42 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(356): Illuminate\\Foundation\\Exceptions\\Handler->prepareResponse(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#43 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(51): Illuminate\\Foundation\\Exceptions\\Handler->render(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#44 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Pipeline->handleException(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException))
+#45 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\xampplatest\\htdocs\\project\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\xampplatest\\htdocs\\project\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#61 C:\\xampplatest\\htdocs\\project\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#62 C:\\xampplatest\\htdocs\\project\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#63 {main}
+"} 
